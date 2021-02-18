@@ -1,0 +1,42 @@
+@import "_color.css";
+@import "_padding.css";
+@import "_tab-pane.css";
+@import "_combo.css";
+@import "_btn.css";
+@import "_lbl.css";
+@import "_field.css";
+
+.root {
+    -fx-background-color: rgba(26, 26, 26, 0.75);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.header{
+    -fx-background-color: rgba(27, 106, 255, 0.7);
+    -fx-alignment: center-left;
+    -fx-padding: 0 10 0 10;
+}
+.header .label{
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.separator *.line {
+    -fx-border-color: rgba(135, 135, 135, 0.75);
+}
+
+
+
+/* Circular Progress Bar */
+.circular-progress{
+    /*-fx-alignment: center;*/
+    -indicator-color: #3598ee;
+    /*-fx-background-color: green;*/
+}
+.circular-progress .indicator{
+    -fx-stroke-type: centered;
+    -fx-fill: null;
+    -fx-stroke: -indicator-color;
+    /*-fx-padding: 5;*/
+}

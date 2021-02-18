@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.carusel.app.controls.UpperTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:id="root"
+      fx:controller="com.carusel.app.ui.SettingController"
+      prefHeight="300.0" prefWidth="500.0">
+
+	<!-- Style -->
+	<stylesheets>
+		<URL value="@../style/setting/main.css"/>
+	</stylesheets>
+
+	<!-- Header -->
+	<HBox styleClass="header">
+		<ImageView id="boxImage">
+			<Image url="@../image/setting.png" requestedWidth="24" requestedHeight="24"/>
+		</ImageView>
+
+		<Label text="Setting">
+			<HBox.margin>
+				<Insets top="5" right="10" bottom="5" left="10"/>
+			</HBox.margin>
+		</Label>
+	</HBox>
+
+	<!-- Body -->
+	<VBox VBox.vgrow="ALWAYS" styleClass="padding-15">
+		<!-- TabPane -->
+		<TabPane tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+			<!-- Key Combination -->
+			<Tab text="Keybinds">
+				<StackPane styleClass="padding-20-10-20-10">
+					<VBox spacing="15">
+						<HBox alignment="CENTER_LEFT" spacing="10">
+							<Label text="Open Wheel" prefWidth="100" styleClass="text-white, lbl-bold"/>
+							<TextField fx:id="fieldKeyCombinations" editable="false" HBox.hgrow="ALWAYS"/>
+							<JFXButton fx:id="buttonRecord" text="Record" onMouseClicked="#handleRecordClick"
+							           styleClass="btn"/>
+						</HBox>
+					</VBox>
+				</StackPane>
+			</Tab>
+
+			<!-- License -->
+			<Tab text="Activation">
+				<StackPane styleClass="padding-20-10-20-10">
+					<VBox spacing="15">
+						<HBox alignment="CENTER_LEFT" spacing="10">
+							<Label text="Request Code" prefWidth="100" styleClass="text-white, lbl-bold"/>
+							<UpperTextField fx:id="fieldRequestCode" editable="false" HBox.hgrow="ALWAYS">
+								<right>
+									<FontIcon iconLiteral="mdi-key-variant" fill="grey" iconSize="16"/>
+								</right>
+							</UpperTextField>
+						</HBox>
+
+						<HBox alignment="CENTER_LEFT" spacing="10">
+							<Label text="Activation Code" prefWidth="100" styleClass="text-white, lbl-bold"/>
+							<UpperTextField fx:id="fieldActivationCode" HBox.hgrow="ALWAYS"/>
+						</HBox>
+					</VBox>
+				</StackPane>
+			</Tab>
+		</TabPane>
+
+		<!-- Separator -->
+		<Separator>
+			<VBox.margin>
+				<Insets top="15" bottom="15"/>
+			</VBox.margin>
+		</Separator>
+
+		<!-- Buttons -->
+		<HBox alignment="CENTER_RIGHT" spacing="15">
+			<JFXButton text="Cancel" onMouseClicked="#handleCancelClick" styleClass="btn"/>
+			<JFXButton text="Ok" onMouseClicked="#handleOkClick" styleClass="btn"/>
+		</HBox>
+	</VBox>
+</VBox>

@@ -1,0 +1,84 @@
+*{
+    -fx-color-primary: #3598ee;
+    -fx-color-success: #82CE34;
+    -fx-color-info: #5bc0de;
+    -fx-color-warning: #f0ad4e;
+    -fx-color-danger: #d9534f;
+    -fx-color-inverse: #292b2c;
+    -fx-color-faded: #ececec;
+    -fx-color-grey-dark: #757575;
+    -fx-color-grey-white: #cecece;
+    -fx-color-blue-donker: #6c7b95;
+}
+
+/* Background */
+.bg-primary{
+    -fx-background-color: -fx-color-primary;
+}
+.bg-success{
+    -fx-background-color: -fx-color-success;
+}
+.bg-info{
+    -fx-background-color: -fx-color-info;
+}
+.bg-warning{
+    -fx-background-color: -fx-color-warning;
+}
+.bg-danger{
+    -fx-background-color: -fx-color-danger;
+}
+.bg-inverse{
+    -fx-background-color: -fx-color-inverse;
+}
+.bg-faded{
+    -fx-background-color: -fx-color-faded;
+}
+.bg-grey-dark{
+    -fx-background-color: -fx-color-grey-dark;
+}
+.bg-grey-white{
+    -fx-background-color: -fx-color-grey-white;
+}
+.bg-white{
+    -fx-background-color: white;
+}
+.bg-blue-donker{
+    -fx-background-color: -fx-color-blue-donker;
+}
+
+/* Text */
+.text-primary{
+    -fx-text-fill: -fx-color-primary;
+}
+.text-success{
+    -fx-text-fill: -fx-color-success;
+}
+.text-warning{
+    -fx-text-fill: -fx-color-warning;
+}
+.text-danger{
+    -fx-text-fill: -fx-color-danger;
+}
+.text-faded{
+    -fx-text-fill: -fx-color-faded;
+}
+.text-grey-dark{
+    -fx-text-fill: -fx-color-grey-dark;
+}
+.text-white{
+    -fx-text-fill: white;
+}
+
+/* Fill */
+.fill-primary{
+    -fx-fill: -fx-color-primary;
+}
+.fill-success{
+    -fx-fill: -fx-color-success;
+}
+.fill-warning{
+    -fx-fill: -fx-color-warning;
+}
+.fill-danger{
+    -fx-fill: -fx-color-danger;
+}
