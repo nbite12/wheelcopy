@@ -68,10 +68,10 @@ public class KeyboardManager{
                     @Override
                     public void run(){
                         int wheelRotation = nativeMouseWheelEvent.getWheelRotation();
-                        if(wheelRotation == -1){
+                        if(wheelRotation < 0){
                             listener.wheelUp();
                         }
-                        else if(wheelRotation == 1){
+                        else if(wheelRotation > 0){
                             listener.wheelDown();
                         }
                     }

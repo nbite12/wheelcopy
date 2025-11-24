@@ -119,18 +119,29 @@ public class AppManager{
     public void registerMouseWheelForSwicthWheel(){
         // Listener
         KeyboardManager.MouseWheelListener listener = new KeyboardManager.MouseWheelListener(){
+            private long lastScrollTime = 0;
+            private static final long SCROLL_COOLDOWN = 75; // 75ms cooldown
+
             @Override
             public void wheelUp(){
-                StageManager
-                        .getInstance()
-                        .spinUpWheel();
+                long currentTime = System.currentTimeMillis();
+                if (currentTime - lastScrollTime >= SCROLL_COOLDOWN) {
+                    StageManager
+                            .getInstance()
+                            .spinUpWheel();
+                    lastScrollTime = currentTime;
+                }
             }
 
             @Override
             public void wheelDown(){
-                StageManager
-                        .getInstance()
-                        .spinDownWheel();
+                long currentTime = System.currentTimeMillis();
+                if (currentTime - lastScrollTime >= SCROLL_COOLDOWN) {
+                    StageManager
+                            .getInstance()
+                            .spinDownWheel();
+                    lastScrollTime = currentTime;
+                }
             }
         };
 
