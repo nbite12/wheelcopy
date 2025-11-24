@@ -137,7 +137,7 @@ public class SettingModel{
 
                 // Default
                 if(state == ActivationCodeState.DEFAULT){
-                    FontIcon icon = new FontIcon(MaterialDesign.MDI_KEY_VARIANT);
+                    FontIcon icon = new FontIcon(MaterialDesign.MDI_KEY);
                     icon.setFill(Color.GREY);
                     icon.setIconSize(16);
                     return icon;
@@ -199,6 +199,19 @@ public class SettingModel{
     // *****************************************************************************************
     // *** General *****************************************************************************
     // *****************************************************************************************
+
+    public void unlockAllFeatures(){
+        DatabaseManager databaseManager = DatabaseManager.getInstance();
+        Database database = databaseManager.getDatabase();
+        LicenseManager licenseManager = LicenseManager.getInstance();
+
+        database.setUserType(UserType.PREMIUM);
+        licenseManager.stopTimer();
+        licenseManager.setTrialLimitExceed(false);
+
+        setActivationCodeState(ActivationCodeState.VALID);
+        setActivationCodeDisable(true);
+    }
 
     public void saveChange(){
         KeyCombination keyCombination = new KeyCombination(getOptionKeyEventsAsArray());

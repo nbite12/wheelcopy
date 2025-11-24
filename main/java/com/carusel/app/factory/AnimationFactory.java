@@ -30,7 +30,7 @@ public class AnimationFactory{
                                 .endValue(node.getTranslateY() + centralRotationSin * translate);
                     }
                 })
-                .config(builder -> builder.duration(Duration.seconds(0.2)).fluentTransition())
+                .config(builder -> builder.duration(Duration.seconds(0.2)))
                 .build();
 
         return timeline;
@@ -43,7 +43,7 @@ public class AnimationFactory{
                 .to()
                 .action(builder -> builder.target(node.translateXProperty()).endValue(node.getTranslateX()))
                 .action(builder -> builder.target(node.translateYProperty()).endValue(node.getTranslateY()))
-                .config(builder -> builder.duration(Duration.seconds(0.2)).fluentTransition())
+                .config(builder -> builder.duration(Duration.seconds(0.2)))
                 .build();
 
         return timeline;

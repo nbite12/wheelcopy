@@ -1,6 +1,6 @@
 package com.carusel.app.model.key;
 
-import org.jnativehook.keyboard.NativeKeyEvent;
+import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
 
 import java.util.Arrays;
 import java.util.List;

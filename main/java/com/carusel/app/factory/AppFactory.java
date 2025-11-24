@@ -50,7 +50,8 @@ public class AppFactory{
         rect.getStyleClass().add(TRIAL_LIMIT_RECT);
         container.getChildren().add(rect);
 
-        Text text = new Text("Expired");
+        Text text = new Text("Testing");
+        text.setFill(javafx.scene.paint.Color.YELLOW);
         text.setTranslateX(-27.5);
         text.setTranslateY(5);
         text.getStyleClass().add(TRIAL_LIMIT_TEXT);

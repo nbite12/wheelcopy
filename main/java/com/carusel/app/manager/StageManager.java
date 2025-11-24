@@ -168,6 +168,15 @@ public class StageManager{
         FXTrayIcon trayIcon = new FXTrayIcon(primaryStage, iconUrl);
         trayIcon.setTrayIconTooltip("Carusel");
         trayIcon.registerListener(this::showStage);
+        
+        // Add Exit menu item
+        javafx.scene.control.MenuItem exitItem = new javafx.scene.control.MenuItem("Exit");
+        exitItem.setOnAction(event -> {
+            Platform.exit();
+            System.exit(0);
+        });
+        trayIcon.addMenuItem(exitItem);
+        
         trayIcon.show();
     }
 

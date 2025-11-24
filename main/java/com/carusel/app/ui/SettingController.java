@@ -49,6 +49,11 @@ public class SettingController extends BaseController{
         model.toggleRecordSave();
     }
 
+    @FXML
+    private void handleUnlockAllClick(){
+        model.unlockAllFeatures();
+    }
+
     private void close(){
         closeStage();
 

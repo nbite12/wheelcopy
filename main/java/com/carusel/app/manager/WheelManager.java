@@ -423,7 +423,9 @@ public class WheelManager{
 
 			LicenseManager licenseManager = LicenseManager.getInstance();
 
-			boolean isTrialExceed = licenseManager.getTrialLimitExceed();
+			// boolean isTrialExceed = licenseManager.getTrialLimitExceed();
+			boolean isTrialExceed = false;
+			
 			if(!isTrialExceed){
 				int currentElementIndex = getCurrentElementIndex();
 
