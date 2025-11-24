@@ -1,0 +1,74 @@
+.tab-pane {
+    -fx-tab-min-width: 90px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-shape: "M300,290 L310,168 L410,168 L421,290 L300,290 z";
+}
+
+.tab-pane .tab:hover {
+    -fx-cursor: hand;
+}
+    /*-fx-stroke: green;*/
+    /*-fx-stroke-width: 5;*/
+    /*-fx-border-color: blue;*/
+
+    /*-fx-outer-border: red;*/
+    /*-fx-border-width: 2, 2, 0, 2;*/
+    /*-fx-border-width: 0;*/
+/*}*/
+
+.tab-pane .tab:selected{
+    /*-fx-border-color: blue;*/
+    -fx-background-color: rgba(27, 106, 255, 0.7);
+}
+
+/*.tab-pane .tab:right {*/
+/*    -fx-background-color: blue;*/
+/*}*/
+
+/*.tab-pane > .tab-header-area > .headers-region > .tab:selected {*/
+/*    -fx-pref-width: 135px;*/
+/*}*/
+
+/*.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {*/
+/*    -fx-shape: "M300,290 L310,168 L410,168 L421,290 L300,290 z";*/
+/*}*/
+
+.tab {
+    /*-fx-background-color: rgba(255, 255, 255, 0.5);*/
+    -fx-background-color: rgba(135, 135, 135, 0.75);
+    /*-fx-border-width: 4 0 0 0;*/
+    /*-fx-border-color: transparent;*/
+    /*-fx-background-insets: 0 1 0 1, 0, 0;*/
+    /*-fx-background-color: transparent;*/
+    /*-fx-border-color: white;*/
+    -fx-border-width: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/*.tab:top {*/
+/*    -fx-background-color: red, blue, green;*/
+/*}*/
+
+/*.tab:right*/
+/*{*/
+/*    -fx-background-color: -fx-tab-border-color, -fx-inner-border-bottomup, -fx-body-color-bottomup;*/
+/*}*/
+
+/*.tab:selected .tab-label {*/
+/*    -fx-alignment: CENTER;*/
+/*    -fx-text-fill: #96b946;*/
+/*}*/

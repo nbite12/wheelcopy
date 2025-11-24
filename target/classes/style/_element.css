@@ -1,0 +1,54 @@
+/* Component */
+.element-main{
+    -fx-stroke: transparent;
+    -fx-fill: rgba(26, 26, 26, 0.3);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+.element-clip-image{
+    -fx-stroke: transparent;
+    -fx-opacity: 0.5;
+}
+.element-clip-text{
+    -fx-font-size: 16;
+    -fx-fill: white;
+    -fx-text-alignment: center;
+}
+.element-inner-line{
+    -fx-stroke: white;
+    -fx-stroke-width: 2.0;
+    -fx-opacity: 0.0;
+}
+.element-icon-view{
+    -fx-opacity: 1.0;
+}
+
+
+/* Hover */
+.element-container:hover{
+    -fx-cursor: hand;
+}
+.element-container:hover .element-main{
+    -fx-fill: rgba(27, 106, 255, 0.7);
+}
+.element-container:hover .element-clip-image{
+    -fx-opacity: 1.0;
+}
+.element-container:hover .element-inner-line{
+    -fx-opacity: 1.0;
+}
+.element-overlay:hover{
+    -fx-cursor: hand;
+}
+
+
+
+/* Selected */
+.element-container-selected .element-main{
+    -fx-fill: rgba(27, 106, 255, 0.7);
+}
+.element-container-selected .element-clip-image{
+    -fx-opacity: 1.0;
+}
+.element-container-selected .element-inner-line{
+    -fx-opacity: 1.0;
+}
