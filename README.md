@@ -1,4 +1,5 @@
 # Carusel
+AVISO: Proyecto creado con soporte de la IA y/o colaboradores a cargo del desarrallador principal Eric Munive Garcia
 
 **Carusel** es una innovadora aplicación de escritorio diseñada para gestionar el portapapeles de manera visual e intuitiva. Este proyecto ha sido **creado enteramente por Eric Munive Garcia** y forma parte de un **portfolio para las empresas**.
 
